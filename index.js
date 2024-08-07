@@ -1,4 +1,4 @@
-const PORT = 8000;
+const PORT = process.env.PORT || 8000; // Use the port provided by Heroku or fallback to 8000 for local development
 const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
